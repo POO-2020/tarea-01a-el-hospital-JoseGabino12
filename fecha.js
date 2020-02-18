@@ -13,8 +13,8 @@ export default class Fecha{
     }
     getAños(){
         let añosTranscurridos 
-        añosTranscurridos = this.años 
-        return `${this}`
+        añosTranscurridos = 2020 - this.fechas.getFullYear() 
+        return `${añosTranscurridos}`
     }
     getMeses(){
 
