@@ -43,6 +43,8 @@ export default class Fecha{
         return `${this.fechas.getDate()}/${mesDelAño}/${this.fechas.getFullYear()}`
     }
     getDiaFecha(){
-
+        let diaDeSemana
+        diaDeSemana = this.diasSemana[this.fechas.getDay()]
+        return `${diaDeSemana}`
     }
 }
