@@ -1,12 +1,14 @@
 import Tiempo from "./tiempo.js"
 import Fecha from "./fecha.js"
 import Nombre from "./nombre.js"
+import Paciente from "./paciente.js"
 
 class Main{
     constructor(){
          this.horas = new Tiempo(11,30,"PM")
          this.fechas = new Fecha(30,4,2001)
          this.nombres = new Nombre("José Gabino", "Morales", "González")
+         this.telefonos = new Paciente(3123194899)
 
     }
     getTempo(){
@@ -27,6 +29,9 @@ class Main{
         console.log(`Nombre ${this.nombres.getApellidoNombre()}`)
         console.log(`Iniciales ${this.nombres.getIniciales()}`)
     }
+    getPaciente(){
+        console.log(`Perfil ${this.telefonos.getPerfil()}`)
+    }
 }
 let app = new Main()
-app.getNombre()
+app.getPaciente()
