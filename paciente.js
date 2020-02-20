@@ -3,11 +3,13 @@ import Fecha from "./fecha.js"
 export default class Paciente{
     /**
      * 
+     * @param {string} nombre 
+     * @param {string} fecha 
      * @param {number} telefono 
      */
-    constructor(telefono){
-        this.nombres = new Nombre("José Gabino", "Morales", "González")
-        this.fechas = new Fecha(30,5,2001)
+    constructor(nombre, fecha, telefono){
+        this.nombres = nombre
+        this.fechas = fecha
         this.telefonos = telefono
     }
     getPerfil(){
